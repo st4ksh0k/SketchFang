@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sketchfang"
+version = "0.1.0"
+description = "Educational research pipeline for studying Sketchfab's viewer asset path (BINZ / OSGJS / glTF)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Educational research use only" }
+dependencies = [
+    "requests>=2.28.0",
+    "pillow>=10.0.0",
+    "zstandard>=0.22.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+sketchfang = "sketchfang.cli.rip:main"
+sketchfang-decrypt = "sketchfang.cli.decrypt:main"
+sketchfang-inspect = "sketchfang.cli.inspect:main"
+sketchfang-unscramble = "sketchfang.cli.unscramble:main"
+
+[tool.setuptools.packages.find]
+include = ["sketchfang*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

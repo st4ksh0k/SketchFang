@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.sketchfang.watch-static-key</string>
+	<key>WorkingDirectory</key>
+	<string>/Users/elinkadmin/Desktop/REPOS/Side-Projects/SketchFang</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Users/elinkadmin/Desktop/REPOS/Side-Projects/SketchFang/.venv/bin/python</string>
+		<string>/Users/elinkadmin/Desktop/REPOS/Side-Projects/SketchFang/scripts/watch_static_key.py</string>
+		<string>--commit</string>
+	</array>
+	<key>StartInterval</key>
+	<integer>21600</integer>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardOutPath</key>
+	<string>/tmp/sketchfang-watch-static-key.log</string>
+	<key>StandardErrorPath</key>
+	<string>/tmp/sketchfang-watch-static-key.log</string>
+</dict>
+</plist>
