@@ -1,0 +1,30 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / local caches
+node_modules/
+.sketchfab_cache/
+
+# Local outputs (research dumps)
+out/
+output/
+.probe/
+*.glb
+*.osgjs
+*.binz
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
